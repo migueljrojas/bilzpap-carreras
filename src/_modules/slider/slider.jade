@@ -1,4 +1,9 @@
-mixin slider(klass)
-    ._slider(class=klass)
-        if block
-            block
+mixin slider(klass, mode)
+    if mode == 'multi'
+        ._slidermulti(class=klass)
+            if block
+                block
+    else
+        ._slider(class=klass)
+            if block
+                block

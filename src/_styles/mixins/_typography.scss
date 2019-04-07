@@ -1,3 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+    font-family: 'VTC-GarageSale';
+    src: url('/fonts/VTC-GarageSale.eot');
+    src: url('/fonts/VTC-GarageSale.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/VTC-GarageSale.woff2') format('woff2'),
+        url('/fonts/VTC-GarageSale.woff') format('woff'),
+        url('/fonts/VTC-GarageSale.ttf') format('truetype'),
+        url('/fonts/VTC-GarageSale.svg#VTC-GarageSale') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

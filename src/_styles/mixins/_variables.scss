@@ -8,6 +8,8 @@ $lightGray: #ebebeb;
 $lightestGray: #f4f7f8;
 $blue: #053f7a;
 $blueGray: #bbc9c9;
+$yellow: #FFD000;
+$red: #D31E00;
 
 $mainColor: $blue;
 $link: $mainColor;
@@ -35,4 +37,5 @@ $duration: 0.3s;
 $easing: cubic-bezier(.785, .135, .15, .86);
 $easingLight: ease;
 
-$mainFont: 'Open Sans', sans-serif;
+$altFont: 'Open Sans', sans-serif;
+$mainFont: 'VTC-GarageSale', sans-serif;

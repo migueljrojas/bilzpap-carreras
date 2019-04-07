@@ -1,4 +1,103 @@
 extends _layouts/base
 
+include ./_modules/slider/slider
+
 block content
     main.home
+        section.home__hero
+            .home__hero__backdrop-mobile
+                img(src="/images/back-hero-mobile.jpg")
+            .home__hero__backdrop-desktop
+                img(src="/images/back-hero-desktop.jpg")
+            .home__hero__characters
+                img(src="/images/characters.png")
+            .home__hero__container
+                .container
+                    .row
+                        .col-xs-24
+                            .home__hero__wrapper
+                                h2.home__hero__title.text-shadow Participa por ser el próximo piloto de ekarts
+                                h3.home__hero__subtitle
+                                    |bilz y pap trae 
+                                    span e-karts 
+                                    |a latinoamerica, un 
+                                    span kart eléctrico 
+                                    |es 100% seguro,
+                                    br
+                                    |silencioso y amigable con el medio ambiente.
+                                    br
+                                    span se el próximo eliseo salazar
+
+                            +slider('home__hero__slider', 'multi')
+                                .home__hero__slide
+                                    .home__hero__group.home__hero__group--left
+                                        h3.home__hero__slide-title.text-shadow
+                                            span 01
+                                            br
+                                            |pista
+                                        p.home__hero__slide-text Se montará una pequeña pista con 10 karts eléctricos. Con barreras de plástico, semáforo de largada, cascos especiales, toma de tiempos, personal capacitado para inscribir y montar y desmontar los chiquitos.
+                                .home__hero__slide
+                                    .home__hero__group.home__hero__group--right
+                                        h3.home__hero__slide-title.text-shadow
+                                            span 02
+                                            br
+                                            |autos
+                                        p.home__hero__slide-text entretención de los padres y los pequeños, también relevante será que conozcan en primera persona, lo importante de los beneficios de la electro movilidad, a través de una app operada desde un smart phone.
+        
+        section.home__creacion
+            .home__creacion__backdrop
+                img(src="/images/back-middle.png")
+            .container
+                .row
+                    .col-xs-24
+                        +slider('home__creacion__slider')
+                            .home__creacion__slide
+                                .home__creacion__slide-group
+                                    .home__creacion__slide-image
+                                        img(src="/images/middle-cover.png")
+                                    .home__creacion__slide-content
+                                        .home__creacion__slide-container
+                                            h3.home__creacion__slide-title creación 1
+                                            img(src="/images/underline.png")
+                                        p.home__creacion__slide-text Participa por ser el próximo @Eliseo Salazar junto a tus hijos en el E-Karts que trae Bilz y pap inspirándote en esta creación.
+                            .home__creacion__slide
+                                .home__creacion__slide-group
+                                    .home__creacion__slide-image
+                                        img(src="/images/middle-cover.png")
+                                    .home__creacion__slide-content
+                                        .home__creacion__slide-container
+                                            h3.home__creacion__slide-title creación 2
+                                            img(src="/images/underline.png")
+                                        p.home__creacion__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            .home__creacion__slide
+                                .home__creacion__slide-group
+                                    .home__creacion__slide-image
+                                        img(src="/images/middle-cover.png")
+                                    .home__creacion__slide-content
+                                        .home__creacion__slide-container
+                                            h3.home__creacion__slide-title creación 3
+                                            img(src="/images/underline.png")
+                                        p.home__creacion__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        section.home__concurso
+            .home__concurso__decoration-top
+                img(src="/images/sparkles.png")
+            .home__concurso__characters
+                img(Src="/images/characters-bottom.png")
+            .home__concurso__decoration-bottom
+                img(src="/images/sparkles.png")
+            .container
+                .row
+                    .col-xs-24.col-md-12.col-md-offset-6
+                        h2.home__concurso__title concurso
+                        p.home__concurso__text
+                            |Aún no creas tu propio auto de carreras con botellas reciblables? crea el tuyo y súbelo a instagram usando carrera 
+                            span #modobilzypap 
+                            |así participás por ser el próximo piloto de e-karts en latinoamerica
+                        +slider('home__concurso__slider')
+                            .home__concurso__slide
+                                .home__concurso__slide-image
+                                    img(src="/images/middle-cover.png")
+                            .home__concurso__slide
+                                .home__concurso__slide-image
+                                    img(src="/images/middle-cover.png")

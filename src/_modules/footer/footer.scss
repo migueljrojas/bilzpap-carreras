@@ -1,3 +1,64 @@
 .footer {
-    
+    background: $lightGray;
+
+    &__container {
+        // height: 10vh;
+        padding: 40px 0;
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+    }
+
+    &__logo {
+        padding-bottom: 40px;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq(md) {
+            margin-left: 0;
+            margin-right: 0;
+            width: auto;
+            height: 10%;
+            padding-bottom: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__title {
+            margin: 0;
+            color: $black + #333;
+            font-size: 32px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            li {
+                margin-left: 20px;
+
+                a{
+                    i{
+                        color: $black + #333;
+                        font-weight: 900;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
 }

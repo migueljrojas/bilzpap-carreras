@@ -1,57 +1,73 @@
 .header {
+    padding: 20px 0;
 
-    $h: &;
+    &__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
 
-    &__hamburguer {
-        cursor: pointer;
-        width: 25px;
-        height: 25px;
-        margin: auto;
-        position: absolute;
-        right: 32px;
-        top: 30px;
+        @include mq(md) {
+            width: 15%;
+        }
 
-        span {
-            background-color: $mainColor;
-            border-radius: 2px;
-            content: '';
-            display: block;
+        img {
             width: 100%;
-            height: 2px;
-
-            &:nth-child(1) {
-                animation:outT 0.6s $easing backwards;
-                animation-direction:reverse;
-            }
-            &:nth-child(2) {
-                margin: 7px 0;
-                animation:outM 0.6s $easing backwards;
-                animation-direction:reverse;
-            }
-            &:nth-child(3) {
-                animation:outBtm 0.6s $easing backwards;
-                animation-direction:reverse;
-            }
+            height: auto;
         }
     }
+    // $h: &;
 
-    &.-open {
-        #{$h}__hamburguer {
-            span:nth-child(1) {
-                animation:inT 0.6s $easing forwards;
-            }
-            span:nth-child(2) {
-                animation:inM 0.6s $easing forwards;
-            }
-            span:nth-child(3) {
-                animation:inBtm 0.6s $easing forwards;
-            }
-        }
-
-        #{$h}__nav {
-
-        }
-    }
+    // &__hamburguer {
+    //     cursor: pointer;
+    //     width: 25px;
+    //     height: 25px;
+    //     margin: auto;
+    //     position: absolute;
+    //     right: 32px;
+    //     top: 30px;
+    //
+    //     span {
+    //         background-color: $mainColor;
+    //         border-radius: 2px;
+    //         content: '';
+    //         display: block;
+    //         width: 100%;
+    //         height: 2px;
+    //
+    //         &:nth-child(1) {
+    //             animation:outT 0.6s $easing backwards;
+    //             animation-direction:reverse;
+    //         }
+    //         &:nth-child(2) {
+    //             margin: 7px 0;
+    //             animation:outM 0.6s $easing backwards;
+    //             animation-direction:reverse;
+    //         }
+    //         &:nth-child(3) {
+    //             animation:outBtm 0.6s $easing backwards;
+    //             animation-direction:reverse;
+    //         }
+    //     }
+    // }
+    //
+    // &.-open {
+    //     #{$h}__hamburguer {
+    //         span:nth-child(1) {
+    //             animation:inT 0.6s $easing forwards;
+    //         }
+    //         span:nth-child(2) {
+    //             animation:inM 0.6s $easing forwards;
+    //         }
+    //         span:nth-child(3) {
+    //             animation:inBtm 0.6s $easing forwards;
+    //         }
+    //     }
+    //
+    //     #{$h}__nav {
+    //
+    //     }
+    // }
 }
 
 //hamburguer animations
