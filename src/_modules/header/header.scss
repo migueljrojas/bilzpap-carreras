@@ -7,6 +7,10 @@
         margin-right: auto;
         width: 70%;
 
+        @include mq(sm) {
+            width: 20%;
+        }
+
         @include mq(md) {
             width: 15%;
         }
