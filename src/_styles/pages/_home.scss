@@ -64,15 +64,14 @@
             width: 55%;
             position: absolute;
             top: 51%;
-            left: 46%;
-            transform: translateX(-50%);
+            left: 0;
+            right: 5%;
+            margin: auto;
 
             @include mq(md) {
                 width: 33%;
                 top: 25%;
                 bottom: auto;
-                left: 47%;
-                transform: translateX(-50%);
             }
 
             img {
