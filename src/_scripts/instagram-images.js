@@ -6,7 +6,7 @@ var InstagramImages = function() {
 
     function insertImages() {
         $.when(
-            getInstagramDataFromHashtags(['ModoBilzyPap']);
+            getInstagramDataFromHashtags(['ModoBilzyPap'])
         ).then(
             function(instagramResponse) {
                 var processedImages = getImagesUrl(instagramResponse);
@@ -25,8 +25,8 @@ var InstagramImages = function() {
                             '<div data-wow-delay="' + animationDelay + 's" class="home__concurso__image wow fadeInUpBig">'+
                                 '<img src="' + image + '"/>'+
                             '</div>'+
-                        '</div>');
-                    );
+                        '</div>')
+                    )
                 });
 
                 imagesContainer.html(htmlStructure);
