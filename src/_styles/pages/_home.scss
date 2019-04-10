@@ -242,8 +242,8 @@
                 width: auto;
 
                 @include mq(md) {
-                    height: 100%;
-                    width: auto;
+                    height: auto;
+                    width: 100%;
                 }
             }
         }
@@ -276,7 +276,7 @@
             .slick-next {
                 display: none !important;           }
         }
-        
+
         &__slider {
             width: 100%;
             height: 100%;
@@ -428,6 +428,15 @@
             }
         }
 
+        &__back-decoration {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+
         .container {
             padding-top: 80px;
             padding-bottom: 100px;
@@ -446,12 +455,20 @@
         &__text {
             color: $black;
             text-align: center;
-            font-size: 24px;
+            font-size: 20px;
+            font-weight: 600;
             margin-bottom: 40px;
+            font-family: $altFont;
 
             span {
                 color: $red;
             }
+        }
+
+        &__images-wrapper {
+            width: 100%;
+            position: relative;
+            height: 200vh;
         }
 
         ._slider {
