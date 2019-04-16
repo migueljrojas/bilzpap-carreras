@@ -69,7 +69,7 @@
             margin: auto;
 
             @include mq(md) {
-                width: 33%;
+                width: 36%;
                 top: 25%;
                 bottom: auto;
             }
@@ -77,6 +77,14 @@
             img {
                 width: 100%;
                 height: auto;
+            }
+
+            &__container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
             }
         }
 
@@ -381,9 +389,10 @@
         &__slide-text {
             font-size: 16px;
             font-family: $altFont;
+            font-weight: bold;
 
             @include mq(md) {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
 
@@ -487,7 +496,7 @@
         &__images-wrapper {
             width: 100%;
             position: relative;
-            background: url('/images/back-bottom.png') no-repeat center top;
+            background: url('/images/back-bottom.png') no-repeat center top / 100%;
         }
 
         &__image {
