@@ -21,7 +21,7 @@ var InstagramImages = function() {
                     var animationDelay = (Math.floor(Math.random() * 100) / 100);
 
                     return (
-                        $('<div class="col-xs-12 col-md-8">'+
+                        $('<div class="col-xs-20 col-xs-offset-2 col-sm-12 col-sm-offset-0">'+
                             '<div data-wow-delay="' + animationDelay + 's" class="home__concurso__image wow fadeInUpBig">'+
                                 '<img src="' + image + '"/>'+
                             '</div>'+

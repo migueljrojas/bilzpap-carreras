@@ -1,18 +1,22 @@
 .header {
-    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 40px 0;
+    z-index: 2;
 
     &__logo {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
+        width: 40%;
 
         @include mq(sm) {
             width: 20%;
         }
 
         @include mq(md) {
-            width: 15%;
+            width: 25%;
         }
 
         img {
