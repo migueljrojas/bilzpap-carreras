@@ -2,14 +2,18 @@
     position: absolute;
     top: 0;
     width: 100%;
-    padding: 40px 0;
     z-index: 2;
+    padding: 20px 0;
+
+    @include mq(sm) {
+        padding: 40px 0;
+    }
 
     &__logo {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 60%;
 
         @include mq(sm) {
             width: 20%;
