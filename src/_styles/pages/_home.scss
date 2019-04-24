@@ -120,6 +120,12 @@
                 margin-top: 60px;
                 text-transform: uppercase;
                 font-weight: 700;
+                color: $midGray;
+            }
+
+            span {
+                color: $red;
+                font-size: 68px;
             }
         }
 
@@ -134,6 +140,7 @@
                 margin-right: auto;
                 width: 70%;
                 font-weight: 100;
+                color: $midGray;
             }
             
             span {
@@ -153,7 +160,7 @@
             }
 
             @include mq(md) {
-                top: 35%;
+                top: 37%;
             }
             // button {
             //
@@ -613,4 +620,8 @@
             }
         }
     }
+}
+
+.-red {
+    color: $red;
 }
