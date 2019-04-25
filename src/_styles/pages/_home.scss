@@ -517,7 +517,8 @@
             text-align: center;
         }
 
-        &__legal {
+        &__legal,
+        &__cargar-mas {
             border-radius: 999px;
             height: 50px;
             color: $white;
@@ -532,6 +533,20 @@
             text-shadow: 0 2px 0 $yellow - #222;
             letter-spacing: 2px;
             padding: 0 30px;
+        }
+
+        &__cargar-mas {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            max-width: 200px;
+            text-align: center;
+            margin-top: 60px;
+
+            &.-disabled {
+                opacity: .5;
+                pointer-events: none;
+            }
         }
 
         &__characters {
@@ -667,6 +682,7 @@
                             left: 50%;
                             transform: translate3d(-50%, -50%, 0);
                             z-index: 2;
+                            top: 100%;
                         }
                     }
                     
