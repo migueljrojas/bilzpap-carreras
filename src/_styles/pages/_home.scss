@@ -568,6 +568,8 @@
             max-width: 200px;
             text-align: center;
             margin-top: 60px;
+            z-index: 1000;
+            position: relative;
 
             &.-disabled {
                 opacity: .5;

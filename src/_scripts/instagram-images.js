@@ -6,6 +6,8 @@ var InstagramImages = function() {
 
     var imagePages = [];
     var pageIndex = 0;
+    var cargarMasButton = $('.home__concurso__cargar-mas');
+
 
     function getImages() {
         $.when(
@@ -21,7 +23,7 @@ var InstagramImages = function() {
             function(images) {
                 imagePages = _.chunk(images, 10);
                 appendImages();
-                $('.home__concurso__cargar-mas').removeClass('-disabled');
+                cargarMasButton.removeClass('-disabled');
                 return;
             }
         );
@@ -44,10 +46,17 @@ var InstagramImages = function() {
             imagesContainer.append(htmlStructure);
             pageIndex += 1;
             new WOW().init();
-        } else {
-            $('.home__concurso__cargar-mas').hide();
+        } 
+        
+        if(pageIndex === imagePages.length) {
+            cargarMasButton.hide();
         }
     }
+
+    cargarMasButton.on('click', function(e) {
+        e.preventDefault();
+        appendImages();
+    });
 
     function getInstagramDataFromHashtags(hashtags){
         return new Promise(function(resolve, reject) {
